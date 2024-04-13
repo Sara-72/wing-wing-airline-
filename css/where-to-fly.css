@@ -1,0 +1,892 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: "Libre Baskerville", serif;
+
+}
+
+body {
+
+    background-color: #fbe7b5;
+}
+
+
+
+#logo img {
+    width: 190px;
+    height:110px;
+    margin-top: 23px;
+    
+
+
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    font-size: 20px;
+
+}
+
+#nav {
+    position: relative;
+}
+
+#nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+#nav ul li {
+    margin: 0 25px;
+    list-style: none;
+    transition: 0.5s;
+
+}
+
+#nav ul li a {
+    text-decoration: none;
+    color: #003b73;
+    position: relative;
+    transition: 0.5s;
+    display: block;
+}
+
+
+
+
+
+
+#nav ul:hover li a {
+    color: whitesmoke;
+    transform: scale(1.5);
+    opacity: 0.2;
+    filter: blur(5px);
+
+}
+
+#nav ul li a:hover {
+    color: whitesmoke;
+    transform: scale(1.2);
+    opacity: 1;
+    filter: blur(0);
+
+}
+
+#nav ul li a:before {
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #003b73;
+    transition: trasnsform 0.5s;
+    transform-origin: right;
+    transform: scalex(0);
+    z-index: -1;
+    border-radius: 5px;
+    padding: 2px 4px;
+
+
+}
+
+#nav ul li a:hover:before {
+
+
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scalex(1);
+
+}
+
+#nav ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav ul li span {
+    margin-right: 7px;
+}
+
+#home {
+    margin-top: -5px;
+
+}
+
+#sign {
+    text-decoration: none;
+    position: relative;
+    padding: 10px 15px;
+    margin: 0 20px;
+    color: #003b73;
+    letter-spacing: 2px;
+    font-size: 20px;
+    transition: 0.5s;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    transition: 0.5s;
+    overflow: hidden;
+
+
+}
+
+#sign:before {
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid gold;
+    border-left: 2px solid gold;
+    transition: 0.5s;
+
+
+}
+
+#sign:hover:before {
+
+    width: 100%;
+    height: 100%;
+
+
+
+}
+
+
+#sign:after {
+
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid gold;
+    border-right: 2px solid gold;
+    transition: 0.5s;
+
+
+}
+
+#sign:hover:after {
+
+    width: 100%;
+    height: 100%;
+
+
+}
+
+
+#sign:hover {
+    background: gold;
+    color: #003b73;
+    box-shadow: 0 0 30px #003b73;
+
+
+
+}
+
+
+
+
+
+
+
+section {
+    padding: 2rem 7%;
+
+
+
+}
+
+
+/******************home****************/
+
+.home {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 0.1rem;
+
+
+
+}
+
+.home .image {
+    flex: 1 1 20rem
+}
+
+.home .image img {
+
+    width: 550px;
+    height: 550px;
+}
+
+.home .content {
+    flex: 1 1 25rem
+}
+
+.home .content h3 {
+    color: black;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+.home .content h3 span {
+    color: #003b73;
+    font-size: 4rem;
+    font-family: "Caveat", cursive;
+    font-weight: 900;
+}
+
+
+.home .content p {
+    color: black;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    padding: 1rem 0;
+    margin-bottom: 14px;
+}
+
+
+.content .btn {
+
+
+    padding: 20px 20px;
+    font-size: 20px;
+    border-radius: 40px;
+    display: table-cell;
+    vertical-align: middle;
+
+
+}
+
+/****************form********************/
+
+.btn {
+
+    font-size: 18px;
+    text-decoration: none;
+    background-color: gold;
+    color: #003b73;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-weight: 200;
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    font-size: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+    border: none;
+
+
+
+}
+
+.btn:hover {
+
+
+    background-color: #003b73;
+    color: gold;
+
+
+
+
+
+
+
+}
+
+
+
+
+.form-container form {
+    background-color: floralwhite;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+
+
+}
+
+
+.form-container form .inputbox {
+    flex: 1 1 15rem;
+
+
+
+}
+
+
+.form-container form .inputbox span {
+    font-size: 1.2rem;
+    color: #003b73;
+    font-weight: 600;
+
+
+
+}
+
+.form-container form .inputbox input {
+    font-size: 0.9rem;
+    color: #003b73;
+    background-color: #fff;
+    border-radius: 0.3rem;
+    margin: 0.5rem 0;
+    text-transform: none;
+    width: 100%;
+    padding: 0.7rem;
+
+
+}
+
+.form-container form .btn {
+
+    flex: 1 1 2rem;
+
+}
+
+
+/*************************packages********************/
+
+.heading {
+
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #003b73;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+.heading span {
+    position: relative;
+    z-index: 0;
+}
+
+.heading span::before {
+
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    z-index: -1;
+    background: gold;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0 90%, 100% 83%, 100% 100%, 0% 100%);
+
+
+}
+
+.packages .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+
+
+
+
+}
+
+.packages .box-container .box {
+    background-color: floralwhite;
+    border-radius: 0.5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+
+
+
+}
+
+
+.packages .box-container .box .image {
+
+    height: 25rem;
+    width: 100%;
+    padding: 1.5rem;
+    position: relative;
+
+
+
+}
+
+.packages .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+
+
+}
+
+
+.packages .box-container .box .image h3 {
+
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+    font-size: 1.3rem;
+    color: #003b73;
+    background: floralwhite;
+    background;
+    border-radius: .5rem;
+    font-weight: lighter;
+    padding: .5rem 1rem;
+
+}
+
+
+.packages .box-container .box .image h3 i {
+
+    color: gold
+}
+
+.packages .box-container .box .content {
+    padding: 1.5rem;
+    padding-top: 0;
+
+}
+
+
+.packages .box-container .box .content .price {
+    font-weight: bolder;
+    color: #003b73;
+    font-size: 1.5rem;
+}
+
+.packages .box-container .box .content .price span {
+    font-weight: lighter;
+    color: #003b73;
+    font-size: 1rem;
+    text-decoration: line-through;
+
+
+}
+
+
+.packages .box-container .box .content p {
+
+    font-size: 1rem;
+    padding: .5rem 0;
+    color: black;
+}
+
+.packages .box-container a {
+
+
+    background-color: #003b73;
+    color: gold;
+
+
+}
+
+.packages .box-container a:hover {
+
+
+    background-color: gold;
+    color: #003b73;
+
+
+}
+
+
+
+
+
+/*****************prices*****************/
+
+
+.pricing .box-container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+
+
+}
+
+
+.pricing .box-container .box {
+
+    background-color: floralwhite;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    padding: 2rem;
+    text-align: center;
+
+}
+
+
+.pricing .box-container .box h3 {
+    padding: 1rem;
+    background: #003b73;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    color: white;
+
+
+}
+
+
+
+.pricing .box-container .box .price {
+    padding-top: 1.5rem;
+
+
+}
+
+
+.pricing .box-container .box .price span {
+    font-size: 1.5rem;
+
+    color: #15334f
+
+}
+
+
+
+.pricing .box-container .box .price .amount{
+    font-size: 3rem;
+
+    color:#003b73;
+    font-weight: bolder;
+
+}
+
+
+
+
+.pricing .box-container .box ul{
+    padding:.5rem 0;
+    list-style: none;
+
+
+
+}
+
+
+.pricing .box-container .box ul li{
+    padding:1rem 0;
+    font-size: 1.2rem;
+
+
+
+
+}
+
+
+.pricing .box-container .box a{
+
+    padding: .8rem;
+}
+
+.box{
+    transition: 0.3s ease;
+}
+
+.box:hover{
+    transform: scale(1.06);
+    
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+
+
+
+/************** new header  ***************/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    font-size: 20px;
+    background-color: rgb(240, 234, 214,0); /* Add a background color with some transparency */
+    z-index: 1000; /* Ensure the header stays on top of other content */
+    width: 100%;
+    padding: 0 20px; /* Add padding to the left and right */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+/* Add a class to the header when it's scrolled */
+header.scrolled {
+    background-color: rgb(240, 234, 214 ,0.9); /* Change the background color when scrolled */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Change the shadow when scrolled */
+}
+
+/************************ ********************/
+
+
+
+
+/*************************footer*****************/
+
+footer {
+
+    width: 100vw;
+    height: 170px;
+    background-color: #15334f;
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+
+footer img {
+    position: relative;
+    width: 240px;
+    height: 190px;
+    display: inline;
+
+    left: 70px;
+
+
+
+
+
+}
+
+
+.social-media {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+
+}
+
+
+
+#column .social-media li {
+    padding-left: 30px;
+    padding-top: 10px;
+    font-size: 15px;
+    margin-top: 40px;
+
+
+
+
+}
+
+
+#column .social-media a {
+
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+    font-size: 20px;
+
+}
+
+
+#column .social-media span {
+
+
+    color: white;
+    padding: 12px;
+
+}
+
+i {
+    background: white;
+    color: #003b73;
+    padding: 3px;
+
+    border-radius: 50%;
+    transition: .3s;
+
+}
+
+
+.social-media i:hover {
+    background: gold;
+    color: #003b73;
+}
+
+
+
+
+.footer-bottom p {
+
+
+
+    color: gold;
+    margin-top: 60px;
+    margin-left: 170px
+}
+
+
+main{
+    margin-top: 4rem;
+}
+
+/******************* Trips *********************/
+
+.heading {
+
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #003b73;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+.heading span {
+    position: relative;
+    z-index: 0;
+}
+
+.heading span::before {
+
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    z-index: -1;
+    background: gold;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0 90%, 100% 83%, 100% 100%, 0% 100%);
+
+
+}
+
+.trips .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+
+
+
+
+}
+
+.trips .box-container .box {
+    background-color: floralwhite;
+    border-radius: 0.5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+
+
+
+}
+
+
+.trips .box-container .box .image {
+
+    height: 25rem;
+    width: 100%;
+    padding: 1.5rem;
+    position: relative;
+
+
+
+}
+
+.trips .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+
+
+}
+
+
+.trips .box-container .box .image h3 {
+
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+    font-size: 1.3rem;
+    color: #003b73;
+    background: floralwhite;
+    background;
+    border-radius: .5rem;
+    font-weight: lighter;
+    padding: .5rem 1rem;
+
+}
+
+
+.trips .box-container .box .image h3 i {
+
+    color: gold
+}
+
+.trips .box-container .box .content {
+    padding: 1.5rem;
+    padding-top: 0;
+
+}
+
+
+.trips .box-container .box .content .price {
+    font-weight: bolder;
+    color: #003b73;
+    font-size: 1.5rem;
+}
+
+.trips .box-container .box .content .price span {
+    font-weight: lighter;
+    color: #003b73;
+    font-size: 1rem;
+    text-decoration: line-through;
+
+
+}
+
+
+.trips .box-container .box .content p {
+
+    font-size: 1rem;
+    padding: .5rem 0;
+    color: black;
+}
+
+.trips .box-container a {
+
+
+    background-color: #003b73;
+    color: gold;
+
+
+}
+
+.trips .box-container a:hover {
+
+
+    background-color: gold;
+    color: #003b73;
+
+
+}
+
+
+/* ********************************************* */
